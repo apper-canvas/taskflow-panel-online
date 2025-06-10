@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "title": "Review quarterly financial reports",
+    "description": "Analyze Q3 revenue, expenses, and profit margins. Prepare summary for board meeting.",
+    "categoryId": "1",
+    "priority": "high",
+    "dueDate": "2024-01-15T09:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-10T08:30:00.000Z",
+    "updatedAt": "2024-01-10T08:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Update project documentation",
+    "description": "Revise API documentation and user guides for the new feature release.",
+    "categoryId": "2",
+    "priority": "medium",
+    "dueDate": "2024-01-18T17:00:00.000Z",
+    "completed": true,
+    "createdAt": "2024-01-08T14:15:00.000Z",
+    "updatedAt": "2024-01-12T16:45:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Schedule team building activity",
+    "description": "Organize a fun team building event for next month. Research venues and activities.",
+    "categoryId": "3",
+    "priority": "low",
+    "dueDate": "2024-01-25T12:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-09T11:20:00.000Z",
+    "updatedAt": "2024-01-09T11:20:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "Respond to client emails",
+    "description": "Reply to pending client inquiries and project update requests.",
+    "categoryId": "1",
+    "priority": "high",
+    "dueDate": "2024-01-14T18:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-11T09:45:00.000Z",
+    "updatedAt": "2024-01-11T09:45:00.000Z"
+  },
+  {
+    "id": "5",
+    "title": "Code review for authentication module",
+    "description": "Review the new authentication system implementation and provide feedback.",
+    "categoryId": "2",
+    "priority": "medium",
+    "dueDate": "2024-01-16T16:00:00.000Z",
+    "completed": true,
+    "createdAt": "2024-01-07T13:30:00.000Z",
+    "updatedAt": "2024-01-11T15:20:00.000Z"
+  },
+  {
+    "id": "6",
+    "title": "Grocery shopping",
+    "description": "Buy ingredients for this week's meal prep. Don't forget the organic vegetables.",
+    "categoryId": "4",
+    "priority": "medium",
+    "dueDate": "2024-01-13T15:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-12T07:00:00.000Z",
+    "updatedAt": "2024-01-12T07:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "title": "Plan sprint retrospective",
+    "description": "Prepare agenda and talking points for the upcoming sprint retrospective meeting.",
+    "categoryId": "2",
+    "priority": "low",
+    "dueDate": "2024-01-19T10:00:00.000Z",
+    "completed": false,
+    "createdAt": "2024-01-10T16:15:00.000Z",
+    "updatedAt": "2024-01-10T16:15:00.000Z"
+  },
+  {
+    "id": "8",
+    "title": "Book dental appointment",
+    "description": "Schedule regular dental cleaning and checkup for next month.",
+    "categoryId": "4",
+    "priority": "low",
+    "dueDate": null,
+    "completed": true,
+    "createdAt": "2024-01-05T12:00:00.000Z",
+    "updatedAt": "2024-01-08T14:30:00.000Z"
+  }
+]

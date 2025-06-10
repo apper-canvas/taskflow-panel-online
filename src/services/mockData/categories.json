@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Business",
+    "color": "#5B47E0",
+    "taskCount": 2
+  },
+  {
+    "id": "2",
+    "name": "Development",
+    "color": "#2196F3",
+    "taskCount": 3
+  },
+  {
+    "id": "3",
+    "name": "Personal",
+    "color": "#4CAF50",
+    "taskCount": 1
+  },
+  {
+    "id": "4",
+    "name": "Health",
+    "color": "#FF6B6B",
+    "taskCount": 2
+  }
+]
