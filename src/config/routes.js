@@ -1,6 +1,6 @@
-import Home from '../pages/Home';
-import Tasks from '../pages/Tasks';
-import Settings from '../pages/Settings';
+import HomePage from '@/components/pages/HomePage';
+import TasksPage from '@/components/pages/TasksPage';
+import SettingsPage from '@/components/pages/SettingsPage';
 
 export const routes = {
   home: {
@@ -8,21 +8,21 @@ export const routes = {
     label: 'Home',
     path: '/',
     icon: 'Home',
-    component: Home
+component: HomePage
   },
   tasks: {
     id: 'tasks',
     label: 'Tasks',
     path: '/tasks',
     icon: 'CheckSquare',
-    component: Tasks
+component: TasksPage
   },
   settings: {
     id: 'settings',
     label: 'Settings',
     path: '/settings',
     icon: 'Settings',
-    component: Settings
+component: SettingsPage
   }
 };
 
