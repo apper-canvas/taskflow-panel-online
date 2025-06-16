@@ -93,9 +93,9 @@ const TaskListSection = () => {
     }
   };
 
-  const filteredTasks = tasks.filter(task => {
+const filteredTasks = tasks.filter(task => {
     if (!showCompleted && task.completed) return false;
-    if (selectedCategory !== 'all' && task.categoryId !== selectedCategory) return false;
+    if (selectedCategory !== 'all' && task.category_id !== selectedCategory) return false;
     if (selectedPriority !== 'all' && task.priority !== selectedPriority) return false;
     if (searchQuery && !task.title.toLowerCase().includes(searchQuery.toLowerCase()) && 
         !task.description.toLowerCase().includes(searchQuery.toLowerCase())) return false;
@@ -109,9 +109,9 @@ const TaskListSection = () => {
     high: tasks.filter(t => t.priority === 'high' && !t.completed).length
   };
 
-  const categoryOptions = [
+const categoryOptions = [
     { value: 'all', label: 'All Categories' },
-    ...categories.map(category => ({ value: category.id, label: category.name }))
+    ...categories.map(category => ({ value: category.Id, label: category.Name }))
   ];
 
   const priorityOptions = [

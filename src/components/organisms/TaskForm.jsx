@@ -9,12 +9,12 @@ import Select from '@/components/atoms/Select';
 import FormField from '@/components/molecules/FormField';
 
 const TaskForm = ({ task, categories, onSave, onCancel }) => {
-  const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     title: task?.title || '',
     description: task?.description || '',
-    categoryId: task?.categoryId || categories[0]?.id || '',
+    category_id: task?.category_id || categories[0]?.Id || '',
     priority: task?.priority || 'medium',
-    dueDate: task?.dueDate ? format(new Date(task.dueDate), 'yyyy-MM-dd') : ''
+    due_date: task?.due_date ? format(new Date(task.due_date), 'yyyy-MM-dd') : ''
   });
 
   const handleSubmit = (e) => {
@@ -26,7 +26,7 @@ const TaskForm = ({ task, categories, onSave, onCancel }) => {
 
     const taskData = {
       ...formData,
-      dueDate: formData.dueDate ? new Date(formData.dueDate).toISOString() : null
+      due_date: formData.due_date ? new Date(formData.due_date).toISOString() : null
     };
 
     onSave(taskData);
@@ -37,9 +37,7 @@ const TaskForm = ({ task, categories, onSave, onCancel }) => {
     { value: 'medium', label: 'Medium' },
     { value: 'high', label: 'High' },
   ];
-
-  const categoryOptions = categories.map(cat => ({ value: cat.id, label: cat.name }));
-
+const categoryOptions = categories.map(cat => ({ value: cat.Id, label: cat.Name }));
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -89,10 +87,10 @@ const TaskForm = ({ task, categories, onSave, onCancel }) => {
           </FormField>
 
           <div className="grid grid-cols-2 gap-4">
-            <FormField label="Category">
+<FormField label="Category">
               <Select
-                value={formData.categoryId}
-                onChange={(e) => setFormData({ ...formData, categoryId: e.target.value })}
+                value={formData.category_id}
+                onChange={(e) => setFormData({ ...formData, category_id: e.target.value })}
                 options={categoryOptions}
               />
             </FormField>
@@ -106,11 +104,11 @@ const TaskForm = ({ task, categories, onSave, onCancel }) => {
             </FormField>
           </div>
 
-          <FormField label="Due Date">
+<FormField label="Due Date">
             <Input
               type="date"
-              value={formData.dueDate}
-              onChange={(e) => setFormData({ ...formData, dueDate: e.target.value })}
+              value={formData.due_date}
+              onChange={(e) => setFormData({ ...formData, due_date: e.target.value })}
             />
           </FormField>
 
