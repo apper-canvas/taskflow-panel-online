@@ -171,10 +171,10 @@ const categoryOptions = [
   return (
     <div className="p-6 max-w-full">
       {/* Header */}
-      <div className="mb-8">
+<div className="mb-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-4 lg:space-y-0">
           <div>
-            <h1 className="text-3xl font-heading font-bold text-gray-900 mb-2">Your Tasks</h1>
+            <h1 className="text-3xl font-heading font-bold text-gray-900 mb-2">Tasker</h1>
             <p className="text-gray-600">
               {taskStats.pending} pending, {taskStats.completed} completed
               {taskStats.high > 0 && (
